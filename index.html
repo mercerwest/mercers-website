@@ -12,25 +12,22 @@
     <header>
         <h1 id="title">MERCERWEST.COM</h1>
         <nav>
-            <div id="menuToggle">
-                <input type="checkbox" />
-              
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+    
+                <ul id="menu" class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        
-            <!-- The colored block -->
-            <div id="coloredBlock"></div>
-        
-            <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -93,19 +90,37 @@
         <footer>
             <p id="date"></p>
         </footer>
-<script src="script.js"></script>   
-<script>
-    $(document).ready(function() {
-        $('#menu li a').click(function(e) {
-            e.preventDefault();
-            var target = $(this).attr('href');
-            $('#pages > section').hide();
-            $(target).show();
-            $('#menuToggle input').prop('checked', false);
-        });
-        $('#pages > section').hide();
-        $('#home').show();
-    });
-</script>     
+        <script src="script.js"></script>   
+        <script>
+            $(document).ready(function() {
+                $('#menu li a').click(function(e) {
+                    e.preventDefault();
+                    var target = $(this).attr('href');
+                    $('#pages > section').hide();
+                    $(target).show();
+                    $('#menuToggle input').prop('checked', false);
+                });
+                $('#pages > section').hide();
+                $('#home').show();
+            });
+    
+            // your new JavaScript code
+            document.getElementById('date').innerHTML = new Date().getFullYear();
+    
+            // add smooth scrolling
+            $(document).ready(function(){
+                $('a').on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>     
 </body>
 </html>
