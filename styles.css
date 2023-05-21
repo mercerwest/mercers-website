@@ -36,6 +36,8 @@ nav {
     position: absolute;
     top: 50px;
     left: 30px;
+    margin: 0;
+    padding: 0;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
