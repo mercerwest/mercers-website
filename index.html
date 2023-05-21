@@ -102,11 +102,17 @@
                 });
                 $('#pages > section').hide();
                 $('#home').show();
+                
+                // Hamburger menu toggle code
+                $('.hamburger-menu').click(function() {
+                    $('#menu').toggleClass('show');
+                    $('.hamburger-menu div').toggleClass('cross');
+                });
             });
-    
+        
             // your new JavaScript code
             document.getElementById('date').innerHTML = new Date().getFullYear();
-    
+        
             // add smooth scrolling
             $(document).ready(function(){
                 $('a').on('click', function(event) {
@@ -121,6 +127,6 @@
                     }
                 });
             });
-        </script>     
+        </script>   
 </body>
 </html>
