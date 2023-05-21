@@ -92,41 +92,44 @@
         </footer>
         <script src="script.js"></script>   
         <script>
-            $(document).ready(function() {
-                $('#menu li a').click(function(e) {
-                    e.preventDefault();
-                    var target = $(this).attr('href');
-                    $('#pages > section').hide();
-                    $(target).show();
-                    $('#menuToggle input').prop('checked', false);
-                });
-                $('#pages > section').hide();
-                $('#home').show();
-                
-                // Hamburger menu toggle code
-                $('.hamburger-menu').click(function() {
-                    $('#menu').toggleClass('show');
-                    $('.hamburger-menu div').toggleClass('cross');
-                });
+    $(document).ready(function() {
+        $('#menu li a').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('#pages > section').hide();
+        $(target).show();
+        $('.nav-container').addClass('hide');
+        $('body').removeClass('menu-open');
+        $('.hamburger-menu div').removeClass('cross');
+    });
+    $('#pages > section').hide();
+    $('#home').show();
+    
+    // Hamburger menu toggle code
+    $('.hamburger-menu').click(function() {
+        $('.nav-container').toggleClass('hide');
+        $('body').toggleClass('menu-open');
+        $('.hamburger-menu div').toggleClass('cross');
+    });
+});
+
+// your new JavaScript code
+document.getElementById('date').innerHTML = new Date().getFullYear();
+
+// add smooth scrolling
+$(document).ready(function(){
+    $('a').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
             });
-        
-            // your new JavaScript code
-            document.getElementById('date').innerHTML = new Date().getFullYear();
-        
-            // add smooth scrolling
-            $(document).ready(function(){
-                $('a').on('click', function(event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function(){
-                            window.location.hash = hash;
-                        });
-                    }
-                });
-            });
+        }
+    });
+});
         </script>   
 </body>
 </html>
