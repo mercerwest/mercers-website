@@ -236,3 +236,19 @@ h1#title {
     color: white;
     transition: all 0.5s ease;
 }
+
+.image-cropper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+}
