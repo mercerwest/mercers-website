@@ -98,8 +98,7 @@
         var target = $(this).attr('href');
         $('#pages > section').hide();
         $(target).show();
-        $('.nav-container').addClass('hide');
-        $('body').removeClass('menu-open');
+        $('#menu').removeClass('show');
         $('.hamburger-menu div').removeClass('cross');
     });
     $('#pages > section').hide();
