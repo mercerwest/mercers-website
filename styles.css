@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #007777;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+/* Navigation Menu */
+nav {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 100%;
+    height: 2em;
+    background: #007777;
+}
+
+/* Styles for the hamburger menu */
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * Transform the middle bar into an X when clicked
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Styles for the navigation menu
+   */
+   #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  /*
+   * Fade in navigation on click
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+.image-cropper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Styles for individual pages */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Styles for headers within the pages */
+section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Styles for paragraph text within the pages */
+section p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Styles for the links within the pages */
+section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  p {
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+    #menuToggle input:checked ~ ul {
+      transform: scale(1.0);
+    }
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* this will make the section take up the whole screen height */
+    text-align: center;
+  }
+
+  #blog .post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #blog .post h3 {
+    margin-top: 0;
+  }
+  
+  #blog .post a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  #projects .project {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects .project h3 {
+    margin-top: 0;
+  }
+  
+  #projects .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #projects .project a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  #projects .project .caption {
+    font-size: 0.8em;
+    text-align: center;
+    color: #666;
+  }
+
+  #resume {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #resume a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    padding: 10px 20px;
+  }
+
+  #contact {
+    padding: 20px 0;
+  }
+  
+  #contact p {
+    margin-bottom: 15px;
+  }
+  
+  #contact a {
+    color: #007BFF;
+  }
+
+  a:hover {
+    background-color: #333;
+    color: white;
+    transition: all 0.5s ease;
+}

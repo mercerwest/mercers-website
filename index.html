@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+    $('#menu a').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('#pages > section').hide();
+        $(target).show();
+        $('#menuToggle input').prop('checked', false);
+    });
+    $('#pages > section').hide();
+    $('#home').show();
+});
+        </script>
+    <meta name="description" content="Mercer West - Product Manager and Customer Advocate.">
+    </head>
+<body>
+    <header>
+        <h1>MERCERWEST.COM</h1>
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#blog"><li>Blog</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#resume"><li>Resume</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="pages">
+        <section id="home">
+            <div class="image-cropper">
+    <img src="C:\Users\R . O . D . E . O\Desktop\Projects\mercer-website\Assets\IMG_6556.jpeg" alt="My Image">
+</div>
+            <p>[Mercer West, 2023]</p>
+        </section>
+    
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <h3>Welcome to my blog</h3>
+                <p>Thanks for visiting my blog. I promise this will be a good-ass blog, y'all.</p>
+                <a href="link-to-full-post.html">Read More</a>
+            </div>
+        </section>
+
+        
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3><b>Easy Sprint</b></h3>
+                <p><b>Easy Sprint</b> is an application for tracking employee productivity across a variety of cloud platforms.</p>
+                <a href="https://www.figma.com/file/ywdLCk1ImwxNM0BgFKZtAn/EASY-SPRINT?type=whiteboard&node-id=0-1&t=SnwMoK1RYkJovnPr-0" target="_blank">View Project</a>
+                <img src="https://cdn.discordapp.com/attachments/1109473315485143120/1109520980482740244/manstrash_Create_an_abstract_and_minimalistic_logo_for_the_EASY_9468e74e-512b-4970-8f00-ecff75952c99.png" alt="Easy Sprint Logo">
+                <p class="caption">(Logo created in Midjourney 5.1)</p>
+            </div>
+        </section>
+    
+        <section id="resume">
+            <h2>Resume</h2>
+            <a href="C:\Users\R . O . D . E . O\Desktop\Projects\mercer-website\Assets\Mercer West - Resumé.pdf" target="_blank">View My Resume</a>
+        </section>
+    
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Thanks for wanting to know more about me. I am currently in graduate school. I am experienced in Product Management and Customer Success Management. I am currently looking for a role with a startup or a mid-sized company. Is this you?</p>
+        
+            <p>Early on I cut my teeth in fine arts administration, civic partnerships, package design, and project management. Much earlier than that I was a touring musician, talent buyer, and music manager. I still like to play guitar around the house.</p>
+        
+            <p>Finally, I have a small dog. She's 'just OK.' We live in Athens, GA.</p>
+        
+            <p>Follow me on <a href="https://linkedin.com/in/mercer-west" target="_blank">LinkedIn</a>, <a href="https://instagram.com/mercerwest" target="_blank">Instagram</a>, and <a href="https://twitter.com/mercer__west" target="_blank">Twitter</a>.</p>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Mercer West</p>
+            <p>225 Elizabeth St.</p>
+            <p>Athens, GA 30601</p>
+            <p><a href="mailto:mercerwest2@gmail.com">mercerwest2@gmail.com</a></p>
+            <p>Call or Text: <a href="tel:+17063087398">+1-706-308-7398</a></p>
+        </section>
+    
+
+        <footer>
+            <p id="date"></p>
+        </footer>
+<script src="script.js"></script>        
+</body>
+</html>
