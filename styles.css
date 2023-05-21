@@ -91,9 +91,9 @@ nav {
    */
    #menu {
     position: absolute;
-    width: 100%;
-    height: 2em;
-    margin: -100px 0 0 -50px;
+    width: 100%; /* Adjusts menu width to occupy entire screen width */
+    height: auto; /* Allows the menu height to adjust based on content */
+    margin: 0; /* Removes the offset margins */
     padding: 50px;
     padding-top: 125px;
     background: #007777;
@@ -102,8 +102,7 @@ nav {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    border: 1px solid #777777;  /* add this line */
-  }
+}
   
   #menu li {
     padding: 10px 0;
