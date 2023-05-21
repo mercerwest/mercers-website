@@ -102,13 +102,14 @@ nav {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    border: 1px solid #777777;  /* add this line */
   }
   
   #menu li {
     padding: 10px 0;
     font-size: 22px;
-  }
-  
+    color: #ffffff;  /* change the color here */
+}
   /*
    * Fade in navigation on click
    */
@@ -162,7 +163,7 @@ section a:hover {
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #777777;
     font-family: 'Arial', sans-serif;
   }
   
@@ -276,8 +277,9 @@ h1, h2, h3 {
 
 
   h1#title {
-    font-size: 12px;
-    color: rgb(129, 129, 129);
-    line-height: 1.2; /* Add this line */
-    margin-top: 1em; /* Add this line */
+    font-size: 2em;   /* adjust as per your preference */
+    color: #ffffff; 
+    margin-top: 1em; 
+    text-align: center;  /* align text in center */
+    padding: 10px;  /* space around text */
 }
