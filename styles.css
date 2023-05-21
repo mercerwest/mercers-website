@@ -42,10 +42,33 @@ section {
   background: #ffffff;
 }
 
+.hamburger-menu div:first-child.cross {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+
+.hamburger-menu div:nth-child(2).cross {
+  display: none;
+}
+
+.hamburger-menu div:last-child.cross {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -10px;
+}
+
 .menu {
   display: none;
+  position: absolute;
+  top: 80px; /* adjust as needed */
+  left: 0;
+  width: 100%;
+  background-color: #007777;
+  padding: 20px;
+  box-sizing: border-box;
   list-style-type: none;
-  padding: 0;
+  z-index: 1000; /* to make sure the menu is above other elements */
 }
 
 .menu.show {
