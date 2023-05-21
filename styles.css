@@ -91,17 +91,17 @@ nav {
    */
    #menu {
     position: absolute;
-    width: 100%; /* Adjusts menu width to occupy entire screen width */
-    height: auto; /* Allows the menu height to adjust based on content */
-    margin: 0; /* Removes the offset margins */
+    width: 300px; /* adjust width as necessary */
+    height: 100%;
+    left: -300px; /* push the menu to the left out of view */
+    margin: 0;
     padding: 50px;
     padding-top: 125px;
     background: #007777;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: left 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
   
   #menu li {
@@ -112,9 +112,10 @@ nav {
   /*
    * Fade in navigation on click
    */
-  #menuToggle input:checked ~ ul {
-    transform: none;
-  }
+   #menuToggle input:checked ~ ul {
+    left: 0;
+}
+
 
 .image-cropper {
     width: 500px;
