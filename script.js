@@ -1,4 +1,5 @@
 window.onload = function() {
     var date = new Date();
-    document.getElementById('date').innerHTML = "Last updated on " + date;
+    var formattedDate = date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('date').innerHTML = "Last updated on " + formattedDate;
 };
