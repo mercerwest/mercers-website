@@ -276,3 +276,9 @@ h1, h2, h3 {
   font-size: 15px; /* change this to your desired size */
   color: rgb(126, 126, 126); /* change this to your desired color */
 }
+
+h1#title {
+  font-size: 20px;
+  color: rgb(129, 129, 129);
+  line-height: 1.2; /* Add this line */
+}
