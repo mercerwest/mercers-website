@@ -21,11 +21,10 @@ section {
 }
 /* Navigation Menu */
 nav {
-  position: absolute;
-  top: 1em;
-  left: 1em;
+  position: relative;
   width: 100%;
   background: #007777;
+  margin-bottom: 2em;
 }
 
 #menuToggle {
