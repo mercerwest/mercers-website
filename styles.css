@@ -271,3 +271,8 @@ h1, h2, h3 {
     color: white;
     transition: all 0.5s ease;
 }
+
+#title {
+  font-size: 15px; /* change this to your desired size */
+  color: white; /* change this to your desired color */
+}
