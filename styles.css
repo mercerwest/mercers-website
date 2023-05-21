@@ -21,25 +21,22 @@ section {
 }
 /* Navigation Menu */
 nav {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    width: 100%;
-    background: #007777;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 100%;
+  background: #007777;
 }
 
-/* Styles for the hamburger menu */
-
-/* Styles for the hamburger menu */
 #menuToggle {
   position: absolute;
   top: 50px;
   left: 30px;
-  z-index: 2;
+  z-index: 3;
   -webkit-user-select: none;
   user-select: none;
 }
-  
+
 #menuToggle input {
   display: block;
   width: 40px;
@@ -49,10 +46,10 @@ nav {
   left: -5px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 4;
   -webkit-touch-callout: none;
 }
-  
+
 #menuToggle span {
   display: block;
   width: 33px;
@@ -61,25 +58,22 @@ nav {
   position: relative;
   background: #cdcdcd;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 3;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
-  
+
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
-  
-  /*
-   * Transform the middle bar into an X when clicked
-   */
-   #menuToggle input:checked ~ span:nth-last-child(2) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
-  
+
 #menuToggle input:checked ~ span:nth-last-child(1) {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -88,35 +82,45 @@ nav {
    * Styles for the navigation menu
    */
    /* Styles for the navigation menu */
-#menu {
-  position: absolute;
-  width: 300px; /* adjust width as necessary */
-  height: 100%;
-  margin: 0;
-  padding: 50px;
-  padding-top: 125px;
-  background: #007777;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translateX(-100%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+   #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 50px;
+    padding-top: 125px;
+    background: transparent;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    z-index: 2;
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
-  color: #ffffff;
+    padding: 10px 0;
+    font-size: 22px;
 }
 
-#menuToggle input:checked ~ #menu {
-  transform: none;
+#menuToggle input:checked ~ ul {
+    transform: none;
 }
-  /*
-   * Fade in navigation on click
-   */
-   #menuToggle input:checked ~ ul {
+
+#coloredBlock {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
     left: 0;
+    background: #007777;
+    transition: width 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    z-index: 1;
+}
+
+#menuToggle input:checked ~ #coloredBlock {
+    width: 100%;
 }
 
 
@@ -285,19 +289,4 @@ h1, h2, h3 {
     margin-top: 1em; 
     text-align: center;  /* align text in center */
     padding: 10px;  /* space around text */
-}
-
-#coloredBlock {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;  /* adjust width as necessary */
-  height: 0;
-  background: #007777;
-  z-index: 1;
-  transition: height 0.2s;
-}
-
-#menuToggle input:checked ~ #coloredBlock {
-  height: 100%;
 }
