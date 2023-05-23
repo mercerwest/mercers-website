@@ -116,6 +116,10 @@ body.menu-open {
   color: #ffffff;
 }
 
+nav ul {
+  font-size: 14px;
+}
+
 /* Rest of the CSS is same as before...*/
 
 /* Styles for individual pages */
@@ -270,4 +274,14 @@ h1#title {
   width: auto;
   object-fit: cover;
   object-position: top;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+     flex-direction: column;
+  }
+  nav li {
+     text-align: center;
+     padding: 10px 0;
+  }
 }
