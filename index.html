@@ -84,16 +84,24 @@
         </footer>
            
         <script>
-            $(document).ready(function() {
-                $('#menu li a').click(function(e) {
-                    e.preventDefault();
-                    var target = $(this).attr('href');
-                    $('#pages > section').hide();
-                    $(target).show();
-                });
-                $('#pages > section').hide();
-                $('#home').show();
-            });
-        </script>    
+    $(document).ready(function() {
+        $('#menu li a').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('#pages > section').hide();
+        $(target).show();
+        $('#menu').removeClass('show');
+        $('.hamburger-menu div').removeClass('cross');
+    });
+    $('#pages > section').hide();
+    $('#home').show();
+    
+    // Hamburger menu toggle code
+    $('.hamburger-menu').click(function() {
+        $('#menu').toggleClass('show');
+        $('.hamburger-menu div').toggleClass('cross');
+    });
+});
+        </script>   
 </body>
 </html>
