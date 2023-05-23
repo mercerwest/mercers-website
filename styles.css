@@ -17,10 +17,13 @@ header {
 }
 
 #navbar {
+  overflow: hidden;
   background-color: #333;
 }
 
 #navbar a {
+  float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -36,52 +39,17 @@ section {
   padding: 20px;
 }
 
-/* Add this at the start of your CSS */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 100px;
-  transition: 0.5s;
-}
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
+  font-size: 14px;
+  list-style-type: none; /* removes bullet points */
+  padding: 0; /* removes browser default padding */
+  display: flex; /* aligns list items horizontally */
+  justify-content: space-around; /* evenly distributes list items */
 }
-nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  transition: 0.5s;
-}
-nav ul li a:hover {
-  color: #3498db;
-}
-.checkbtn {
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check {
-  display: none;
+
+nav li {
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* Rest of the CSS is same as before...*/
