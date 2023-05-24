@@ -181,7 +181,7 @@ h1#title {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
-    z-index: 9999
+    z-index: 9998
   }
   
   #resume a {
@@ -191,7 +191,7 @@ h1#title {
     text-decoration: none;
     border: 1px solid #007BFF;
     padding: 10px 20px;
-    z-index: 9998;
+    z-index: 10000;
   }
 
   #about {
@@ -255,7 +255,7 @@ h1#title {
   }
 
   #resume {
-    z-index: 10000;  
+    z-index: 9998;  
   }
 
   #resume a {
