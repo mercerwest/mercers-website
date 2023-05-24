@@ -312,7 +312,7 @@ h1#title {
 
   #contact {
     position: relative;
-    z-index: 2;  
+    z-index: 9998;  
   }
 
   #contact p {
