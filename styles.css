@@ -248,7 +248,7 @@ h1#title {
 div#beaker span.glow {
   width:100%;
   height:100%;
-  background:##222;
+  background:#222;
   position:relative;
   display:block;
   border-radius:200px;
