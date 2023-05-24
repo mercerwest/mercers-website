@@ -259,11 +259,3 @@ h1#title {
   z-index: 1;  /* lower than the .bubble's z-index */
 }
 
-.container {
-  position: relative;
-}
-
-.contact-link {
-  position: absolute;
-  z-index: 10000;
-}
