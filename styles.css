@@ -307,6 +307,7 @@ h1#title {
   #about img {
     max-width: 100%;
     height: auto;
+    z-index: 2;  
   }
 
   #contact {
