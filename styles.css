@@ -247,6 +247,11 @@ h1#title {
   nav li {
      text-align: center;
      padding: 10px 0;
+     z-index: 10000;  // set an appropriate z-index value
+  }
+
+  nav a {
+    z-index: 10000;  // set an appropriate z-index value
   }
 }
 
