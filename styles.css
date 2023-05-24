@@ -301,7 +301,7 @@ h1#title {
 
   #about {
     position: relative;
-    z-index: 9998;  
+    z-index: 1;  
   }
 
   #about img {
