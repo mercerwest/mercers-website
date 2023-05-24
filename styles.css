@@ -271,6 +271,11 @@ h1#title {
     z-index: 9998; 
   }
 
+  #projects {
+    z-index: 9998;  
+  }
+
+
   #resume {
     z-index: 9998;  
   }
@@ -279,6 +284,16 @@ h1#title {
     position: relative;
     z-index: 10000;  
   }
+
+  #about {
+    z-index: 9998;  
+  }
+
+  #contact {
+    z-index: 9998;  
+  }
+
+
 }
 
 #pages {
