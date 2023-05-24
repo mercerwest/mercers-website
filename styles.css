@@ -168,6 +168,7 @@ h1#title {
     margin-top: 15px;
     color: #007BFF;
     text-decoration: none;
+    z-index: 10000;
   }
   
   #projects .project .caption {
@@ -190,6 +191,7 @@ h1#title {
     text-decoration: none;
     border: 1px solid #007BFF;
     padding: 10px 20px;
+    z-index: 10000;
   }
 
   #about {
@@ -211,6 +213,7 @@ h1#title {
   
   #contact a {
     color: #007BFF;
+    z-index: 10000;
   }
 
   a:hover {
