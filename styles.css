@@ -293,6 +293,15 @@ h1#title {
     z-index: 9998;  
   }
 
+  #contact p {
+    margin-bottom: 15px;
+  }
+  
+  #contact a {
+    color: #007BFF;
+    z-index: 10000;
+  }
+
 
 }
 
