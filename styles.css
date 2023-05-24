@@ -245,6 +245,8 @@ h1#title {
   z-index: 1;
 }
 
-.bubble {
-  z-index: 2;
+.image-cropper img,
+.project img {
+  position: relative;
+  z-index: 1;  /* lower than the .bubble's z-index */
 }
