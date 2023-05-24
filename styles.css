@@ -115,6 +115,7 @@ h1#title {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
+    z-index: 2;
   }
 
   #blog {
@@ -192,6 +193,7 @@ h1#title {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
+    z-index: 2;
   }
 
   #contact {
@@ -228,6 +230,7 @@ h1#title {
   width: auto;
   object-fit: cover;
   object-position: top;
+  z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
