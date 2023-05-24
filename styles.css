@@ -245,12 +245,14 @@ h1#title {
      flex-direction: column;
   }
   nav li {
+     position: relative;
      text-align: center;
      padding: 10px 0;
      z-index: 10000; 
   }
 
   nav a {
+    position: relative;
     z-index: 9998; 
   }
 
@@ -259,6 +261,7 @@ h1#title {
   }
 
   #resume a {
+    position: relative;
     z-index: 10000;  
   }
 }
