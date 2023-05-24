@@ -284,6 +284,8 @@ h1#title {
   #projects .project img {
     position: relative;
     z-index: 0;
+    max-width: 100%;
+    height: auto;
   }
 
 
@@ -300,6 +302,11 @@ h1#title {
   #about {
     position: relative;
     z-index: 9998;  
+  }
+
+  #about img {
+    max-width: 100%;
+    height: auto;
   }
 
   #contact {
