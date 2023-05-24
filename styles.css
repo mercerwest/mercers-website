@@ -283,7 +283,7 @@ h1#title {
 
   #projects .project img {
     position: relative;
-    z-index: 2;
+    z-index: 0;
   }
 
 
