@@ -112,6 +112,9 @@ h1#title {
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
   #blog .post {
@@ -171,6 +174,9 @@ h1#title {
     text-decoration: none;
     border: 1px solid #007BFF;
     padding: 10px 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
   #contact {
