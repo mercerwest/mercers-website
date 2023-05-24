@@ -19,6 +19,29 @@ header {
 #navbar {
   overflow: hidden;
   background-color: #333;
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background: linear-gradient(to right, #007777, #00d9d9);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;  /* Make sure navbar is positioned */
+  z-index: 10000;  
 }
 
 #navbar a {
@@ -240,13 +263,244 @@ h1#title {
   nav li {
      text-align: center;
      padding: 10px 0;
-     z-index: 3;
   }
 }
 
 #pages {
   position: relative;
-  z-index: 3;
+}
+
+.image-cropper img,
+.project img {
+  position: relative;
+  z-index: 1;  /* lower than the .bubble's z-index */
+}
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+section {
+  padding: 20px;
+}
+
+nav ul {
+  font-size: 14px;
+  list-style-type: none; /* removes bullet points */
+  padding: 0; /* removes browser default padding */
+  display: flex; /* aligns list items horizontally */
+  justify-content: space-around; /* evenly distributes list items */
+}
+
+nav li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Rest of the CSS is same as before...*/
+
+/* Styles for individual pages */
+section {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Styles for headers within the pages */
+section h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+/* Styles for paragraph text within the pages */
+section p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Styles for the links within the pages */
+section a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #0056b3;
+}
+
+h1, h2, h3 {
+  color: #777777;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  color: #666;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h1#title {
+  font-size: 2em;   /* adjust as per your preference */
+  color: #ffffff; 
+  margin-top: 1em; 
+  text-align: center;  /* align text in center */
+  padding: 10px;  /* space around text */
+}
+
+  section {
+    padding: 20px;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+
+  #blog {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  #blog .post {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #blog .post h3 {
+    margin-top: 0;
+  }
+  
+  #blog .post a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  #projects {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  #projects .project {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects .project h3 {
+    margin-top: 0;
+  }
+  
+  #projects .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #projects .project a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  #projects .project .caption {
+    font-size: 0.8em;
+    text-align: left;
+    color: #666;
+  }
+
+  #resume {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #resume a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    padding: 10px 20px;
+  }
+
+  #about {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+
+  #contact {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    margin-bottom: 15px;
+  }
+  
+  #contact a {
+    color: #007BFF;
+  }
+
+  a:hover {
+    background-color: #333;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.image-cropper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+  z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+     flex-direction: column;
+  }
+  nav li {
+     text-align: center;
+     padding: 10px 0;
+  }
+}
+
+#pages {
+  position: relative;
 }
 
 .image-cropper img,
