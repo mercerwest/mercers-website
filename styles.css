@@ -281,6 +281,11 @@ h1#title {
     z-index: 10000;
   }
 
+  #projects .project img {
+    position: relative;
+    z-index: 2;
+  }
+
 
   #resume {
     position: relative;
