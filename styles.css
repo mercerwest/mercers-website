@@ -239,3 +239,12 @@ h1#title {
      padding: 10px 0;
   }
 }
+
+#pages {
+  position: relative;
+  z-index: 1;
+}
+
+.bubble {
+  z-index: 2;
+}
