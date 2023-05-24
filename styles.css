@@ -164,7 +164,9 @@ h1#title {
 
   #resume {
     text-align: center;
-    padding: 20px 0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
   }
   
   #resume a {
@@ -174,13 +176,18 @@ h1#title {
     text-decoration: none;
     border: 1px solid #007BFF;
     padding: 10px 20px;
+  }
+
+  #about {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
   }
 
   #contact {
-    padding: 20px 0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
   }
   
   #contact p {
