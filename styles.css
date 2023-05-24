@@ -117,6 +117,12 @@ h1#title {
     margin-bottom: 20px;
   }
 
+  #blog {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
   #blog .post {
     border: 1px solid #ddd;
     padding: 15px;
@@ -132,6 +138,12 @@ h1#title {
     margin-top: 15px;
     color: #007BFF;
     text-decoration: none;
+  }
+
+  #projects {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
   #projects .project {
