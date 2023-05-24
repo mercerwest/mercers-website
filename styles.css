@@ -111,7 +111,6 @@ h1#title {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* this will make the section take up the whole screen height */
     text-align: center;
   }
 
