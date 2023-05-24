@@ -272,11 +272,18 @@ h1#title {
   }
 
   #projects {
+    position: relative;
     z-index: 9998;  
+  }
+
+  #projects .project a {
+    position: relative;
+    z-index: 10000;
   }
 
 
   #resume {
+    position: relative;
     z-index: 9998;  
   }
 
@@ -286,10 +293,12 @@ h1#title {
   }
 
   #about {
+    position: relative;
     z-index: 9998;  
   }
 
   #contact {
+    position: relative;
     z-index: 9998;  
   }
 
@@ -298,6 +307,7 @@ h1#title {
   }
   
   #contact a {
+    position: relative;
     color: #007BFF;
     z-index: 10000;
   }
