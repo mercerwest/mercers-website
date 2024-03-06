@@ -239,8 +239,8 @@ h1#title {
 }
 
 .image-cropper {
-  width: 762px;
-  height: 790px;
+  width: 500px;
+  height: 500px;
   position: relative;
   overflow: hidden;
 }
