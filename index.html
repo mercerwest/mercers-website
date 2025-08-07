@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mercer West</title>
+    <title>🍒 Mercer West Portfolio - SMOOTHY Motion Smoothing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -97,16 +97,34 @@
 
     <script>
         $(document).ready(function() {
+            // Function to show the correct section based on URL hash
+            function showSection() {
+                var hash = window.location.hash || '#home';
+                $('#pages > section').hide();
+                $(hash).show();
+            }
+            
             $('#menu li a').click(function(e) {
                 e.preventDefault();
                 var target = $(this).attr('href');
+                
+                // Update the URL hash
+                window.location.hash = target;
+                
+                // Show the target section
                 $('#pages > section').hide();
                 $(target).show();
                 $('#menu').removeClass('show');
                 $('.hamburger-menu div').removeClass('cross');
             });
-            $('#pages > section').hide();
-            $('#home').show();
+            
+            // Handle browser back/forward buttons
+            $(window).on('hashchange', function() {
+                showSection();
+            });
+            
+            // Show initial section based on URL
+            showSection();
             
             // Hamburger menu toggle code
             $('.hamburger-menu').click(function() {
