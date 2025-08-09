@@ -410,3 +410,7 @@ a:hover {
     height: 700px;
   }
 }
+
+html, body { overflow-x: hidden; }
+.iframe-container { width: 100%; max-width: 100vw; }
+.iframe-container iframe { width: 100%; height: 70vh; min-height: 420px; }
